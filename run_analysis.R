@@ -1,9 +1,12 @@
-if (!file.exists("UCI HAR Dataset")) 
-{
-  fileURL <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
-  download.file(fileURL, "UCI-HAR-dataset.zip")
-  unzip("UCI-HAR-dataset.zip")
-}
+# 
+# To save the data files from the internet
+# if (!file.exists("UCI HAR Dataset")) 
+# {
+#   fileURL <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
+#   download.file(fileURL, "UCI-HAR-dataset.zip")
+#   unzip("UCI-HAR-dataset.zip")
+# }
+# Assuming the data is on your working directory
 
 # Load column names
 features <- read.table("./UCI HAR Dataset/features.txt")
